@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Banner Generator</title>
-    <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
-    <script>
-       $(function(){
-         var textName = $('h1').html();
-         
-       
-       
-       });
-    </script>
-  </head>
-  <body>
-    <h1></h1>
-    <input id="textName">
-    </br>
-    <button>Generate</button>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Banner Generator</title>
+  <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  <script>
+    $(function() {
+      // var textName = $().html(); 
+      $('#headLine').css({
+        'font-size': '40px',
+        'font-family': 'Nosifer'
+      })
+      
+    });
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Creepster|Nosifer');
+  </style>
+</head>
+
+<body>
+  <h1 id="headLine">Banner Generator</h1>
+  Name: <input type="text" name="Name" id="textName">
+  
+  </br>
+  <button>Generate</button>
+</body>
+
 </html>
