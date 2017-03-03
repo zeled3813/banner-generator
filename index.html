@@ -12,20 +12,51 @@
         'font-size': '40px',
         'font-family': 'Nosifer'
       })
-      
+      $('button').click(function() {
+        var colorUser = $('#favColor').val();
+        var firstName = $('#firstName').val();
+        var lastName = $('#lastName').val()
+        $('').val(colorUser);
+        $('div').css('background-color', colorUser);
+        $('#bannerName').html('Name: ' + firstName + ' ' + lastName);
+
+      })
     });
   </script>
   <style>
     @import url('https://fonts.googleapis.com/css?family=Creepster|Nosifer');
+    div {
+      width: 500px;
+      height: 500px;
+      margin: auto;
+    }
+    
+    body {
+      text-align: center;
+    }
+    
+    h2 {
+      position: relative;
+      top: 50px;
+    }
   </style>
 </head>
 
 <body>
   <h1 id="headLine">Banner Generator</h1>
-  Name: <input type="text" name="Name" id="textName">
-  
+  First Name: <input type="text" name="Name" id="firstName">
+  </br>
+  Last Name: <input type="text" name="Name" id="lastName">
+  </br>
+  Favorite Color: <input type="color" name="favcolor" value="#ff0000" id="favColor">
   </br>
   <button>Generate</button>
+
+  <div>
+    <h2 id="bannerName"></h2>
+    <h2></h2>
+
+  </div>
 </body>
 
 </html>
