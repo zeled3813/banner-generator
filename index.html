@@ -18,13 +18,15 @@
         var lastName = $('#lastName').val()
         $('').val(colorUser);
         $('div').css('background-color', colorUser);
-        $('#bannerName').html('Name: ' + firstName + ' ' + lastName);
+        $('#bannerName').html('Congratulations').css('font-family','Lobster');
+        $('#bothNames').html(firstName + ' ' + lastName).css('font-family','Lobster');
 
       })
     });
   </script>
   <style>
     @import url('https://fonts.googleapis.com/css?family=Creepster|Nosifer');
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lobster');
     div {
       width: 500px;
       height: 500px;
@@ -38,6 +40,10 @@
     h2 {
       position: relative;
       top: 50px;
+    }
+    p{
+      position:relative;
+      top:100px;
     }
   </style>
 </head>
@@ -55,6 +61,7 @@
   <div>
     <h2 id="bannerName"></h2>
     <h2></h2>
+    <p id="bothNames"><p>
 
   </div>
 </body>
